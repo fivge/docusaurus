@@ -3,11 +3,11 @@ module.exports = {
   title: '0x64',
   url: 'https://0x64.ml',
   baseUrl: '/',
-  onBrokenLinks: 'throw',
+  onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
   organizationName: 'fivge',
-  projectName: 'docusaurus',
+  projectName: 'fivge.github.io',
   themeConfig: {
     colorMode: {
       defaultMode: 'light',
@@ -19,7 +19,11 @@ module.exports = {
       },
     },
     navbar: {
-      title: '🙈🙉🙊 0x64.ml',
+      title: '1+2+3=6',
+      logo: {
+        alt: 'logo',
+        src: 'img/logo.svg',
+      },
       items: [
         {
           to: '/docs/init',
@@ -71,5 +75,4 @@ module.exports = {
       },
     ],
   ],
-  plugins: ['@docusaurus/plugin-google-analytics', '@docusaurus/plugin-google-gtag'],
 };
