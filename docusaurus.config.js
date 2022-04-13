@@ -13,10 +13,6 @@ module.exports = {
       defaultMode: 'light',
       disableSwitch: false,
       respectPrefersColorScheme: true,
-      switchConfig: {
-        darkIcon: '🌚',
-        lightIcon: '🌞',
-      },
     },
     navbar: {
       title: '1+2+3=6',
@@ -49,14 +45,6 @@ module.exports = {
       theme: require('prism-react-renderer/themes/github'),
       darkTheme: require('prism-react-renderer/themes/dracula'),
     },
-    googleAnalytics: {
-      trackingID: 'G-LYJV7VY9CK',
-      anonymizeIP: true,
-    },
-    gtag: {
-      trackingID: 'G-LYJV7VY9CK',
-      anonymizeIP: true,
-    },
   },
   presets: [
     [
@@ -71,6 +59,14 @@ module.exports = {
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
+        },
+        gtag: {
+          trackingID: 'G-LYJV7VY9CK',
+          anonymizeIP: true,
+        },
+        googleAnalytics: {
+          trackingID: 'G-LYJV7VY9CK',
+          anonymizeIP: true,
         },
       },
     ],
