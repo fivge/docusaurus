@@ -8,6 +8,7 @@ module.exports = {
   favicon: 'img/favicon.ico',
   organizationName: 'fivge',
   projectName: 'fivge.github.io',
+  deploymentBranch: 'master',
   themeConfig: {
     colorMode: {
       defaultMode: 'light',
