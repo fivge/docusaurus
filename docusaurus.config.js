@@ -1,6 +1,6 @@
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 module.exports = {
-  title: '0x64',
+  title: '1+2+3=6',
   url: 'https://0x64.ml',
   baseUrl: '/',
   onBrokenLinks: 'warn',
@@ -22,11 +22,10 @@ module.exports = {
       },
       items: [
         {
-          to: '/docs/init',
+          to: '/docs/',
           position: 'left',
           label: 'Document',
         },
-        { to: '/blog', label: 'Blog', position: 'left' },
         {
           href: 'https://github.com/fivge',
           position: 'right',
@@ -53,10 +52,9 @@ module.exports = {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
           showLastUpdateTime: true,
+          breadcrumbs: true,
         },
-        blog: {
-          showReadingTime: true,
-        },
+        blog: false,
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },
