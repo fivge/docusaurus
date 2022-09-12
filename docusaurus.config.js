@@ -36,7 +36,6 @@ module.exports = {
       ],
       hideOnScroll: true,
     },
-    hideableSidebar: true,
     footer: {
       style: 'dark',
       copyright: `Copyright © ${new Date().getFullYear()} fivge, Inc. Built with Docusaurus.`,
@@ -44,6 +43,11 @@ module.exports = {
     prism: {
       theme: require('prism-react-renderer/themes/github'),
       darkTheme: require('prism-react-renderer/themes/dracula'),
+    },
+    docs: {
+      sidebar: {
+        hideable: true,
+      },
     },
   },
   presets: [
