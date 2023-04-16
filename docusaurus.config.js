@@ -38,7 +38,7 @@ module.exports = {
     },
     footer: {
       style: 'dark',
-      copyright: `Copyright © ${new Date().getFullYear()} fivge, Inc. Built with Docusaurus.`,
+      copyright: `© ${new Date().getFullYear()} by fivge | Built with Docusaurus`,
     },
     prism: {
       theme: require('prism-react-renderer/themes/github'),
