@@ -28,6 +28,21 @@ module.exports = {
           label: 'Document',
         },
         {
+          href: 'https://memos.0x64.ml',
+          position: 'left',
+          label: 'Memos',
+        },
+        {
+          href: 'https://joplin.0x64.ml',
+          position: 'left',
+          label: 'Joplin',
+        },
+        {
+          href: 'https://shiori.0x64.ml',
+          position: 'left',
+          label: '栞',
+        },
+        {
           href: 'https://github.com/fivge',
           position: 'right',
           className: 'header-github-link',
@@ -64,12 +79,16 @@ module.exports = {
           customCss: require.resolve('./src/css/custom.css'),
         },
         gtag: {
-          trackingID: 'G-LYJV7VY9CK',
+          trackingID: 'G-GREPWZ9VPP',
           anonymizeIP: true,
         },
-        googleAnalytics: {
-          trackingID: 'G-LYJV7VY9CK',
-          anonymizeIP: true,
+        googleTagManager: {
+          containerId: 'GTM-PWVWLN3',
+        },
+        sitemap: {
+          changefreq: 'weekly',
+          priority: 0.5,
+          filename: 'sitemap.xml',
         },
       },
     ],
