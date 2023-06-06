@@ -64,6 +64,17 @@ module.exports = {
         hideable: true,
       },
     },
+    themeConfig: {
+      metadata: [{ name: 'keywords', content: 'blog, 个人博客, 0x64.ml' }],
+    },
+    algolia: {
+      appId: 'W0JJ03F6GB',
+      apiKey: '19c6df7c72e432a11e288ef75ae76ef5',
+      indexName: '0x64',
+      contextualSearch: true,
+      searchParameters: {},
+      searchPagePath: 'search',
+    },
   },
   presets: [
     [
