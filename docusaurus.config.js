@@ -1,7 +1,7 @@
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 module.exports = {
   title: '1+2+3=6',
-  url: 'https://0x64.ml',
+  url: 'https://0x64.in',
   baseUrl: '/',
   onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
@@ -28,17 +28,17 @@ module.exports = {
           label: 'Document',
         },
         {
-          href: 'https://memos.0x64.ml',
+          href: 'https://memos.0x64.in',
           position: 'left',
           label: 'Memos',
         },
         {
-          href: 'https://joplin.0x64.ml',
+          href: 'https://joplin.0x64.in',
           position: 'left',
           label: 'Joplin',
         },
         {
-          href: 'https://shiori.0x64.ml',
+          href: 'https://shiori.0x64.in',
           position: 'left',
           label: '栞',
         },
@@ -65,7 +65,7 @@ module.exports = {
       },
     },
     themeConfig: {
-      metadata: [{ name: 'keywords', content: 'blog, 个人博客, 0x64.ml' }],
+      metadata: [{ name: 'keywords', content: 'blog, 个人博客, 0x64.ml, 0x64.in' }],
     },
     algolia: {
       appId: 'W0JJ03F6GB',
