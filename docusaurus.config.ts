@@ -1,5 +1,8 @@
-/** @type {import('@docusaurus/types').DocusaurusConfig} */
-module.exports = {
+import { themes } from 'prism-react-renderer';
+import type { Config } from '@docusaurus/types';
+import type * as Preset from '@docusaurus/preset-classic';
+
+const config: Config = {
   title: '1+2+3=6',
   url: 'https://doc.0x64.in',
   baseUrl: '/',
@@ -56,8 +59,8 @@ module.exports = {
       copyright: `© ${new Date().getFullYear()} by fivge | Built with Docusaurus`,
     },
     prism: {
-      theme: require('prism-react-renderer').themes.github,
-      darkTheme: require('prism-react-renderer').themes.dracula,
+      theme: themes.github,
+      darkTheme: themes.dracula,
     },
     docs: {
       sidebar: {
@@ -80,19 +83,19 @@ module.exports = {
       searchParameters: {},
       searchPagePath: 'search',
     },
-  },
+  } satisfies Preset.ThemeConfig,
   presets: [
     [
       '@docusaurus/preset-classic',
       {
         docs: {
-          sidebarPath: require.resolve('./sidebars.js'),
+          sidebarPath: './sidebars.js',
           showLastUpdateTime: true,
           breadcrumbs: true,
         },
         blog: false,
         theme: {
-          customCss: require.resolve('./src/css/custom.css'),
+          customCss: './src/css/custom.css',
         },
         gtag: {
           trackingID: 'G-GREPWZ9VPP',
@@ -106,7 +109,9 @@ module.exports = {
           priority: 0.5,
           filename: 'sitemap.xml',
         },
-      },
+      } satisfies Preset.Options,
     ],
   ],
 };
+
+export default config;

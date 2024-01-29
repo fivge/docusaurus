@@ -1,5 +1,3 @@
-import React from 'react';
-import Footer from '@theme-original/Footer';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import './index.css';
 
