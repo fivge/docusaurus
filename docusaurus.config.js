@@ -56,8 +56,8 @@ module.exports = {
       copyright: `© ${new Date().getFullYear()} by fivge | Built with Docusaurus`,
     },
     prism: {
-      theme: require('prism-react-renderer/themes/github'),
-      darkTheme: require('prism-react-renderer/themes/dracula'),
+      theme: require('prism-react-renderer').themes.github,
+      darkTheme: require('prism-react-renderer').themes.dracula,
     },
     docs: {
       sidebar: {
@@ -66,6 +66,11 @@ module.exports = {
     },
     themeConfig: {
       metadata: [{ name: 'keywords', content: 'blog, 个人博客, 0x64.ml, 0x64.in' }],
+      // TODO: add more languages
+      // https://github.com/FormidableLabs/prism-react-renderer/blob/prism-react-renderer%402.1.0/packages/generate-prism-languages/index.ts#L9
+      prism: {
+        additionalLanguages: ['bash', 'diff', 'json'],
+      },
     },
     algolia: {
       appId: 'W0JJ03F6GB',
