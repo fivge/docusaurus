@@ -1,6 +1,7 @@
 import { themes } from 'prism-react-renderer';
 import type { Config } from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
+import { EnumChangefreq } from 'sitemap';
 
 const config: Config = {
   title: '1+2+3=6',
@@ -105,7 +106,7 @@ const config: Config = {
           containerId: 'GTM-PWVWLN3',
         },
         sitemap: {
-          changefreq: 'weekly',
+          changefreq: EnumChangefreq.WEEKLY,
           priority: 0.5,
           filename: 'sitemap.xml',
         },
