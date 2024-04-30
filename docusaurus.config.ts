@@ -13,6 +13,7 @@ const config: Config = {
   organizationName: 'fivge',
   projectName: 'fivge.github.io',
   deploymentBranch: 'master',
+  themes: ['docusaurus-theme-search-typesense'],
   themeConfig: {
     colorMode: {
       defaultMode: 'light',
@@ -35,16 +36,6 @@ const config: Config = {
           href: 'https://memos.0x64.in',
           position: 'left',
           label: 'Memos',
-        },
-        {
-          href: 'https://joplin.0x64.in',
-          position: 'left',
-          label: 'Joplin',
-        },
-        {
-          href: 'https://shiori.0x64.in',
-          position: 'left',
-          label: '栞',
         },
         {
           href: 'https://github.com/fivge',
@@ -76,13 +67,30 @@ const config: Config = {
         additionalLanguages: ['bash', 'diff', 'json'],
       },
     },
-    algolia: {
-      appId: 'W0JJ03F6GB',
-      apiKey: '19c6df7c72e432a11e288ef75ae76ef5',
-      indexName: '0x64',
+    // algolia: {
+    //   appId: 'W0JJ03F6GB',
+    //   apiKey: '19c6df7c72e432a11e288ef75ae76ef5',
+    //   indexName: '0x64',
+    //   contextualSearch: true,
+    //   searchParameters: {},
+    //   searchPagePath: 'search',
+    // },
+    typesense: {
+      typesenseCollectionName: '0x64_doc_search',
+      typesenseServerConfig: {
+        nodes: [
+          {
+            host: 'typesense.0x64.in',
+            port: 80,
+            protocol: 'http',
+          },
+        ],
+        apiKey: '171c66e3-7344-41a9-8bfb-3ea2c881dbf4',
+      },
+      // Optional: Typesense search parameters: https://typesense.org/docs/0.24.0/api/search.html#search-parameters
+      typesenseSearchParameters: {},
+      // Optional
       contextualSearch: true,
-      searchParameters: {},
-      searchPagePath: 'search',
     },
   } satisfies Preset.ThemeConfig,
   presets: [
