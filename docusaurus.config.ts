@@ -81,8 +81,8 @@ const config: Config = {
         nodes: [
           {
             host: 'typesense.0x64.in',
-            port: 80,
-            protocol: 'http',
+            port: 443,
+            protocol: 'https',
           },
         ],
         apiKey: '171c66e3-7344-41a9-8bfb-3ea2c881dbf4',
