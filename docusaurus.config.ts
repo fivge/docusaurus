@@ -33,6 +33,11 @@ const config: Config = {
           label: 'Document',
         },
         {
+          href: 'https://0x64.in',
+          position: 'left',
+          label: '/',
+        },
+        {
           href: 'https://memos.0x64.in',
           position: 'left',
           label: 'Memos',
@@ -80,7 +85,7 @@ const config: Config = {
       typesenseServerConfig: {
         nodes: [
           {
-            host: 'typesense.0x64.in',
+            host: 'typesense.0x64.gen.in',
             port: 443,
             protocol: 'https',
           },
