@@ -13,7 +13,17 @@ const config: Config = {
   organizationName: 'fivge',
   projectName: 'fivge.github.io',
   deploymentBranch: 'master',
-  themes: ['docusaurus-theme-search-typesense'],
+  themes: [
+    [
+      require.resolve('@easyops-cn/docusaurus-search-local'),
+      /** @type {import("@easyops-cn/docusaurus-search-local").PluginOptions} */
+      {
+        hashed: true,
+        language: ['en', 'zh'],
+        indexBlog: false,
+      },
+    ],
+  ],
   themeConfig: {
     colorMode: {
       defaultMode: 'light',
@@ -71,31 +81,6 @@ const config: Config = {
       prism: {
         additionalLanguages: ['bash', 'diff', 'json'],
       },
-    },
-    // algolia: {
-    //   appId: 'W0JJ03F6GB',
-    //   apiKey: '19c6df7c72e432a11e288ef75ae76ef5',
-    //   indexName: '0x64',
-    //   contextualSearch: true,
-    //   searchParameters: {},
-    //   searchPagePath: 'search',
-    // },
-    typesense: {
-      typesenseCollectionName: '0x64_doc_search',
-      typesenseServerConfig: {
-        nodes: [
-          {
-            host: 'typesense.0x64.gen.in',
-            port: 443,
-            protocol: 'https',
-          },
-        ],
-        apiKey: '171c66e3-7344-41a9-8bfb-3ea2c881dbf4',
-      },
-      // Optional: Typesense search parameters: https://typesense.org/docs/0.24.0/api/search.html#search-parameters
-      typesenseSearchParameters: {},
-      // Optional
-      contextualSearch: true,
     },
   } satisfies Preset.ThemeConfig,
   presets: [
