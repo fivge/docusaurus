@@ -8,7 +8,7 @@ const config: Config = {
   url: 'https://doc.0x64.in',
   baseUrl: '/',
   onBrokenLinks: 'warn',
-  onBrokenMarkdownLinks: 'warn',
+  // onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
   organizationName: 'fivge',
   projectName: 'fivge.github.io',
@@ -112,7 +112,8 @@ const config: Config = {
     ],
   ],
   future: {
-    experimental_faster: true,
+    v4: true,
+    faster: true,
   },
 };
 
