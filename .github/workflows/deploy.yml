@@ -21,6 +21,7 @@ jobs:
         uses: actions/checkout@v6
         with:
           fetch-depth: 0 # Docusaurus "Last Updated"
+          submodules: true
 
       - name: Install pnpm
         uses: pnpm/action-setup@v5
